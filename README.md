@@ -27,26 +27,35 @@
    ***
 
 3. Installing an npm package
-    - Now that your directory has been initialized you can now install npm packages the package I will demonstrate is called Inquirer and more info can be found <a href="https://www.npmjs.com/package/inquirer" target="_blank">here</a>.
 
-    - To install the Inquirer package you can run the following
+   - Now that your directory has been initialized you can now install npm packages the package I will demonstrate is called Inquirer and more info can be found <a href="https://www.npmjs.com/package/inquirer" target="_blank">here</a>.
 
-      ``` npm install inquirer``` 
-    - this will grab inquirer from the depths of the internet and then install it in your package.json
-    - Once the install is complete you will now be able to use the Inquirer package inside of any JS file in that directory.
+   - Instlling a package will use the following format
 
-    ---
+     `npm install <packagename>`
+
+   - To install the Inquirer package you can run the following
+
+     ` npm install inquirer`
+
+   - this will grab inquirer from the depths of the internet and then install it in your package.json
+   - Once the install is complete you will now be able to use the Inquirer package inside of any JS file in that directory.
+
+   ***
 
 4. Using require to implement packages
-    - Now that we have a package installed it can now be used in your JS file but first you must bring it using the require module to use it.
-    - To use require you will structure it like the following
 
-      ```const variableName = require("packageName")```
-    - In our case to use the inquirer package it will look something like this
+   - Now that we have a package installed it can now be used in your JS file but first you must bring it using the require module to use it.
+   - To use require you will structure it like the following
 
-      ```const inquirer = require("inquirer")```
+     `const variableName = require("packageName")`
 
-    - Now you can reference the inquirer package using the variable created named inquirer. Here is an example of using an inquirer method.
+   - In our case to use the inquirer package it will look something like this
+
+     `const inquirer = require("inquirer")`
+
+   - Now you can reference the inquirer package using the variable created named inquirer. Here is an example of using an inquirer method.
+
 ```
     inquirer
   .prompt([
